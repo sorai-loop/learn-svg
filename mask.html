@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mask</title>
+</head>
+<body>
+    <!-- 完全体 -->
+    <svg
+        width="200"
+        height="200"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient id="Gradient">
+                <stop offset="0" stop-color="black" />
+                <stop offset="1" stop-color="white" />
+            </linearGradient>
+            <mask id="Mask">
+            <rect x="0" y="0" width="200" height="200" fill="url(#Gradient)" />
+            </mask>
+        </defs>
+
+        <rect x="0" y="0" width="200" height="200" fill="green" />
+        <rect x="0" y="0" width="200" height="200" fill="red" mask="url(#Mask)" />
+    </svg>
+    <!-- maskの中身 -->
+    <svg
+        width="200"
+        height="200"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient id="Gradient">
+                <stop offset="0" stop-color="black" />
+                <stop offset="1" stop-color="white" />
+            </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="200" height="200" fill="url(#Gradient)" />
+    </svg>
+    <!-- マスクなしの最下位層の緑 -->
+    <svg
+        width="200"
+        height="200"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect x="0" y="0" width="200" height="200" fill="green" />
+    </svg>
+    <!-- マスク部分の赤 -->
+    <svg
+        width="200"
+        height="200"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient id="Gradient">
+                <stop offset="0" stop-color="black" />
+                <stop offset="1" stop-color="white" />
+            </linearGradient>
+            <mask id="Mask">
+            <rect x="0" y="0" width="200" height="200" fill="url(#Gradient)" />
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="200" height="200" fill="red" mask="url(#Mask)" />
+    </svg>
+</body>
+</html>
