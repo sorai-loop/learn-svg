@@ -1,0 +1,18 @@
+:root {
+  --path-length: 400;
+}
+
+.path-animation {
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--path-length);
+  animation: strokeDraw 2s ease-in-out forwards;
+}
+
+@keyframes strokeDraw {
+  0% {
+    stroke-dashoffset: var(--path-length);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
