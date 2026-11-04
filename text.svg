@@ -1,5 +1,6 @@
 <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
-  <text>
+
+  <text stroke="blue" stroke-dasharray="1000">
     これは<tspan rotate="45" dx="1,10" font-weight="bold" fill="red">太字で赤字</tspan>です
   </text>
 
