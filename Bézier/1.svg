@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    
+<svg viewBox="2 7 5 9" xmlns="http://www.w3.org/2000/svg">
+    <path fill="none" stroke="red"
+    d="M3 10 q2 -5 3 5" />
 </svg>
